@@ -1,0 +1,108 @@
+/* 紫色主题配色 - 类似心衰预测系统 */
+:root {
+    --primary: #6f42c1;    /* 紫色主色调 */
+    --secondary: #5a32a3;  /* 深紫色 */
+    --accent: #28a745;     /* 绿色强调色 */
+    --light-purple: #e2d9f3;
+}
+
+/* 整体布局 */
+.stApp {
+    background-color: #f8f9fa;
+}
+
+/* 标题样式 */
+h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+h2, h3 {
+    color: var(--secondary);
+}
+
+/* 表单样式 */
+.stForm {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(111, 66, 193, 0.1);
+    border: 1px solid var(--light-purple);
+}
+
+/* 功能卡片样式 */
+div[data-testid="stVerticalBlock"] > div > div {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(111, 66, 193, 0.1);
+    transition: transform 0.2s ease;
+}
+
+div[data-testid="stVerticalBlock"] > div > div:hover {
+    transform: translateY(-2px);
+}
+
+/* 按钮样式 */
+.stButton > button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.3);
+}
+
+/* 主要按钮（开始预测） */
+button[type="primary"] {
+    background-color: var(--accent);
+}
+
+button[type="primary"]:hover {
+    background-color: #218838;
+}
+
+/* 导航菜单样式调整 */
+.css-1d391kg {
+    background-color: var(--primary) !important;
+}
+
+/* 结果卡片样式 */
+.stAlert {
+    border-radius: 12px;
+    border: 1px solid var(--light-purple);
+}
+
+.stSuccess {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.stWarning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeeba;
+}
+
+.stInfo {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: #bee5eb;
+}
+
+/* 输入控件样式 */
+.stSlider > div > div {
+    background-color: var(--light-purple);
+}
+
+.stSelectbox > div, .stRadio > div {
+    border: 1px solid var(--light-purple);
+    border-radius: 8px;
+    padding: 8px;
+}
